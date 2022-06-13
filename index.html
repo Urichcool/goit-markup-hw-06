@@ -342,10 +342,26 @@
             <svg class="socials-icon">
                 <use href="./images/icons.svg#icon-linkedin"></use>
             </svg></a></li>
+        </div>
+<div class="footer-form-column">
+    <p class="socials-text">Подпишитесь на рассылку</p>
+    <form class="js-speaker-form">
+        <div class="footer-input">
+            <label for="email"></label>
+        <input class="footer-email-input" type="text" name="email" id="email" placeholder="E-mail">
+        <button class="footer-submit-button" type="submit">Подписаться
+        <svg class="footer-button-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-send"></use>
+        </svg>
+        </button>
+    </div>
+    </form>
+    
+</div> 
     </ul>
 </div>
 
-        </div>
+        
         
     </footer>
 
@@ -356,8 +372,35 @@
                     <use href="./images/icons.svg#icon-close-modal"></use>
                 </svg>
             </button>
+            <p class="modal-text">
+                Оставьте свои данные, мы вам перезвоним
+            </p>
+            <form class="js-speaker-form">
+        <label for="name">Имя</label>
+    <input class="modal-name-input" type="text" name="name" id="name">
+        <label for="tel">Телефон</label>
+    <input class="modal-tel-input" type="tel" name="tel" id="tel">
+        <label for="email">Почта</label>
+        <input class="modal-email-input" type="email" name="email" id="email" >
+        <label for="coment">Комментарий</label>
+        <textarea class="modal-textarea-coment" name="coment" id="coment" rows="10" placeholder="Введите текст"></textarea>
+        <input class="modal-checkbox" type="checkbox" name="topic" value="agreement" id="policy">
+        <label for="Policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        <button class="modal-submit-button" type="submit">Отправить</button>
+            </form>
              <script src="./js/modal.js"></script>
         </div>
     </div>
+    <script>
+        (() => {
+  document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+    e.preventDefault();
+
+    new FormData(e.currentTarget).forEach((value, name) =>
+      console.log(`${name}: ${value}`),
+    );
+  });
+})();
+    </script>
 </body>
 </html>

@@ -731,6 +731,14 @@ text-align: center;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+   transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.footer-submit-button:hover,
+.footer-submit-button:focus{
+  background-color: #188CE8;
 }
 
 .footer-button-icon{
@@ -827,6 +835,7 @@ color: var(--accent-color);
   display: flex;
   flex-direction: column;
   position: relative;
+  
 }
 
 
@@ -922,14 +931,49 @@ letter-spacing: 0.01em;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-}
-
-.modal-checkbox-label{
-  margin-left: 8px;
   font-size: 1.71;
 line-height: 24px;
 letter-spacing: 0.03em;
 }
+
+.modal-checkbox-input{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  
+}
+
+.modal-checkbox-label{
+    font-size: 1.71;
+line-height: 24px;
+letter-spacing: 0.03em;
+margin-left: 7px;
+}
+
+
+.modal-checkbox-icon{
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  transition-property: border-color color;   
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+
+.modal-checkbox-input:checked +.modal-checkbox-icon{
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  
+}
+
 
 .modal-checkbox-link{
   font-family: 'Roboto';
@@ -1004,7 +1048,7 @@ transition-property: background-color;
   line-height: 1.6;
   letter-spacing: 0.03em;
   cursor: pointer;
-   transition-property: color, background-color, filter;
+   transition-property: box-shadow, color, background-color, filter;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
   
@@ -1014,6 +1058,7 @@ transition-property: background-color;
 .examples-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   
 }
 

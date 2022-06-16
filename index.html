@@ -348,7 +348,8 @@
     <form>
          <p class="footer-form-text">Подпишитесь на рассылку</p>
         <div class="footer-field">
-        <input class="footer-input" type="text" name="email" placeholder="E-mail">
+            <label for="email"></label>
+        <input class="footer-input" type="text" name="email" id="email" placeholder="E-mail">
         <button class="footer-submit-button" type="submit">Подписаться
         <svg class="footer-button-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-send"></use>
@@ -380,16 +381,27 @@
                 <div class="modal-form-field">
         <label class="modal-form-label" for="name">Имя</label>
     <input class="modal-form-input" type="text" name="name" id="name">
+         <svg  class="modal-form-icon">
+            <use href="./images/icons.svg#icon-modal-person"></use>
+        </svg>
                 </div>
+
+                
 
                 <div class="modal-form-field">
         <label class="modal-form-label" for="tel">Телефон</label>
     <input class="modal-form-input" type="tel" name="tel" id="tel">
+     <svg  class="modal-form-icon">
+            <use href="./images/icons.svg#icon-modal-phone"></use>
+        </svg>
                 </div>
 
                 <div class="modal-form-field">
-        <label class="modal-form-label" for="email">Почта</label>
-        <input class="modal-form-input" type="email" name="email" id="email" >
+        <label class="modal-form-label" for="modal-mail">Почта</label>
+        <input class="modal-form-input" type="mail" name="mail" id="modal-mail">
+         <svg  class="modal-form-icon">
+            <use href="./images/icons.svg#icon-modal-email"></use>
+        </svg>
                 </div>
 
                 <div class="modal-textarea-field">

@@ -352,7 +352,7 @@
         
             <div class="footer-field">
                 <label for="footer-email"></label>
-        <input class="footer-input" type="text" name="email" id="footer-email"  placeholder="E-mail">
+        <input class="footer-input" required type="text" name="email" id="footer-email"  placeholder="E-mail">
         <button class="footer-submit-button" type="submit">Подписаться
         <svg class="footer-button-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-send"></use>
@@ -384,7 +384,7 @@
                 
         <label class="modal-form-field">
             <span class="modal-form-label">Имя</span>
-    <input class="modal-form-input" type="text" name="name">
+    <input class="modal-form-input" required type="text" name="name">
          <svg  class="modal-form-icon">
             <use href="./images/icons.svg#icon-modal-person"></use>
         </svg>
@@ -395,7 +395,7 @@
                 
         <label class="modal-form-field">
             <span class="modal-form-label">Телефон</span>
-    <input class="modal-form-input" type="tel" name="tel">
+    <input class="modal-form-input" required type="tel" name="tel">
      <svg  class="modal-form-icon">
             <use href="./images/icons.svg#icon-modal-phone"></use>
      </svg>
@@ -404,7 +404,7 @@
                 
         <label class="modal-form-field">
             <span class="modal-form-label">Почта</span>
-        <input class="modal-form-input" type="email" name="email">
+        <input class="modal-form-input" required type="email" name="email">
          <svg  class="modal-form-icon">
             <use href="./images/icons.svg#icon-modal-email"></use>
         </svg>
@@ -417,7 +417,7 @@
                 </label>
 
  <label class="modal-checkbox-field">
-        <input class="modal-checkbox-input" type="checkbox" name="policy" value="policy">
+        <input class="modal-checkbox-input" required type="checkbox" name="policy" value="policy">
             <svg class="modal-checkbox-icon">
            <use href="./images/icons.svg#icon-modal-check"></use>
        </svg>
@@ -429,9 +429,8 @@
         
         <button class="modal-submit-button" type="submit">Отправить</button>
             </form>
-             <script src="./js/modal.js"></script>
         </div>
     </div>
-   
+   <script src="./js/modal.js"></script>
 </body>
 </html>
